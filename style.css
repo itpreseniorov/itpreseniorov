@@ -1,0 +1,636 @@
+html {
+    overflow-x: hidden;
+    width: 100%;
+    font-family: 'Poppins', 'NotoSans';
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    user-select: none;
+    touch-action: manipulation;
+}
+
+.content {
+    min-width: 440px;
+    min-height: 400px;
+    font-family: 'Poppins', 'NotoSans';
+}
+
+.topbar-notification {
+    background:#0073e6;
+    color: #f1f1f1;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    z-index: 1000;
+    top: 0;
+    height: auto;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+}
+
+header {
+    font-family: 'Poppins';
+    background: #004080;
+    color: #f1f1f1;
+    font-size: clamp(1.6rem, 5vw, 3rem);
+    font-weight: normal;
+    position: relative;
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    min-height: 100px;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    border-bottom: 4px solid #ecf0f2;
+}
+
+header p {
+    font-family: 'Noto Sans';
+    margin: 0;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    font-style: italic;
+    color: #d9e6f2;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Tieň pre lepšiu čitateľnosť */
+}
+
+/* NAVIGÁCIA */
+.nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav a {
+    color: #004080;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: 8px;
+    border: none;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: fit-content;
+}
+/* Medzera medzi ikonami */
+.nav a i {
+    margin-right: 8px;
+}
+
+.nav a:hover {
+    background-color: #004080;
+    color: #f1f1f1;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* BODY */
+body {
+    font-family: 'Poppins', 'NotoSans';
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f1f1f1, #F2F2F2);
+    background-attachment: fixed;
+    text-align: left;
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    color: #272323;
+    overflow-x: hidden;
+}
+
+/* Nadpisy: Poppins */
+header, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+  
+/* Telo textu: Noto Sans */
+body, p, li, span, a, input, textarea, h3, u {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: clamp(1.2rem, 4vw, 1.5rem);
+}
+
+/* FONTY */
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-Italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-BoldItalic.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+}
+  
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('/fonts/NotoSans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('/fonts/NotoSans-Italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+  }
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('/fonts/NotoSans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('/fonts/NotoSans-BoldItalic.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+  }
+
+/* GALERIA */
+.gallery-container {
+    position: relative;
+    max-width: 1010px;
+    margin: 0 auto;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.gallery-track {
+    display: flex;
+    animation: scrollGallery 40s linear infinite;
+    will-change: transform;
+}
+
+.gallery-track img {
+    width: 20rem;
+    height: 13rem;
+    border-radius: 8px;
+    margin-right: 10px;
+    margin-left: 10px;
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    user-select: none;
+    pointer-events: none;
+}
+
+.gallery-container {
+    position: relative;
+    width: 100%;
+    max-width: 1010px;
+    margin: 0 auto;
+    margin-top: 1.5rem !important;
+}
+
+.gallery-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover; /* Zabezpečí, že obrázok nezostane deformovaný */
+}
+
+.gallery-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #004080;
+    color: #f1f1f1;
+    font-size: 2.5rem;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    user-select: none;
+    transition: background-color 0.3s, transform 0.2s;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.gallery-control:hover {
+    background-color: #005cbf;
+}
+.gallery-control:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.gallery-control-left {
+    left: -90px;
+}
+.gallery-control-right {
+    right: -90px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    margin: 1.5rem auto;
+}
+
+.card h2 { 
+    color: #004080; 
+    font-size: clamp(1rem, 4vw, 2rem);
+    margin-bottom: 1px; 
+}
+
+.card h3 { 
+    color: #272323; 
+    font-size: clamp(1.1rem, 4vw, 1.5rem);
+    margin-bottom: 10px; 
+    margin-left: -10px;
+}
+
+td {
+    padding: 8px 10px 14px 10px;
+    line-height: 1.5;
+}
+
+ul li {
+    font-size: clamp(1.2rem, 4vw, 1.5rem) !important;
+    line-height: 1.5;
+}
+
+li {
+    margin-bottom: 1em;
+}
+
+/* Medzera medzi odrážkami 1.5*/
+ul li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+ul li::marker {
+    color: #004080;
+}
+
+/* VYUCBA */
+.vyucba-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vyucba-extra-info {
+    display: none;
+    font-size: 0.95em;
+    color: #272323;
+    font-style: italic;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 8px 10px 14px 10px;
+    background: linear-gradient(#f1f1f1, #f1efef);
+}
+
+/* PONUKA */
+.ponuka-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ponuka-content button {
+    margin-left: 10px;
+}
+
+.ponuka-extra-info {
+    display: none;
+    font-size: 0.95em;
+    color: #272323;
+    font-style: italic;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 8px 10px 14px 10px;
+    background: linear-gradient(#f1f1f1, #f1efef);
+    margin-top: 10px;
+}
+
+/* CENNIK */
+.cennik-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.cennik-left {
+    flex: 1;
+    font-weight: 300;
+}
+
+.cennik-right {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* medzera medzi cenou a tlačidlom */
+    font-weight: 400;
+    color: #004080;
+    margin-left: 15px;
+}
+
+.cennik-cena {
+    text-align: right;
+    min-width: 80px;
+}
+
+.cena {
+    margin-top: 5px; /* Medzera medzi textom a cenou */
+    font-weight: bold;
+    color: #272323;
+}
+
+/* Animácia pre zobrazenie */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* TLAČIDLÁ */
+button,
+.button-navod, 
+.button-platba {
+    background-color: #004080;
+    color: #f1f1f1;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+    text-align: center;
+}
+
+button:hover,
+.button-navod:hover,
+.button-platba:hover {
+    background-color: #0073e6;
+}
+
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #25D366;
+    color: #f1f1f1;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: clamp(1.1rem, 4vw, 1.8rem);
+    font-weight: normal;
+    transition: background-color 0.3s;
+    margin-bottom: 5px;
+}
+
+.whatsapp-button:hover {
+    background-color: #1ebe57;
+}
+
+.email-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #0073e6;
+    color: #f1f1f1;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: clamp(1rem, 4vw, 1.8rem);
+    font-weight: normal;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.email-button:hover {
+    background-color: #005bb5;
+}
+
+.kontakt-button {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #004080;
+    color: #f1f1f1;
+    border-radius: 30px;
+    font-size: clamp(1rem, 4vw, 1.5rem) !important;
+    font-weight: normal;
+    transition: background-color 0.3s;
+    padding: 10px 15px;
+    text-decoration: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.kontakt-button:hover {
+    background-color: #005bb5;
+    color: #f1f1f1;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* IKONY */
+.whatsapp-icon {
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+}
+
+.email-icon {
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+}
+
+/* KONTAKT */
+.kontakt-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+}
+
+.modra-poznamka {
+    font-size: clamp(1.2rem, 4vw, 1.5rem) !important;
+    line-height: 1;
+    margin-top: 10px;
+    font-style: italic;
+    color: #004080;
+}
+
+.poznamka {
+    font-size: clamp(1.2rem, 4vw, 1.5rem) !important;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.poznamka-navod {
+    font-size: clamp(1.2rem, 4vw, 1.5rem) !important;
+    line-height: 1.5;
+    padding-right: 1px;
+}
+
+.poznamka-dni {
+    font-size: clamp(1.2rem, 4vw, 1.5rem) !important;
+    line-height: 1;
+}
+
+.modra-poznamka-lin {
+    font-size: clamp(1.1rem, 4vw, 1.5rem) !important;
+    line-height: 1;
+}
+
+footer {
+    text-align: center; 
+    background: #004080;
+    color: #f1f1f1; 
+    font-size: 0.9rem;
+    position: relative;    
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40px; 
+    padding: 9px;
+    width: 100%;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.3);
+    border-top: 4px solid #ecf0f2;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Zabezpečí presúvanie sa po stránke klávesnicou */
+.nav a:focus,
+.email-button:focus,
+.whatsapp-button:focus {
+    outline: 2px solid #0073e6;
+    outline-offset: 2px;
+}
+
+@media screen and (max-width: 768px) {
+    /* Zmenšenie paddingu a zarovnanie pre menšie zariadenia */
+    header {
+        font-size: clamp(2rem, 6vw, 3rem);
+        padding-top: 3.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    header p {
+        font-size: 1.1rem;
+    }
+    
+    .nav {
+        flex-direction: column; /* Zmení smer na stĺpec na menších zariadeniach */
+        align-items: center; /* Vycentruje odkazy v navigácii */
+    }
+
+    .nav a {
+        font-size: 1.1rem;
+        text-align: center;
+        width: fit-content;
+        margin: 0.1rem;
+        padding: 12px 1rem !important;
+        font-weight: bold;
+    }
+
+    .card h2 {
+        font-size: clamp(1.5rem, 6vw, 2rem);
+    }
+
+    .cennik-right {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 5px;
+    }
+    
+    .cennik-cena {
+        min-width: 100px;
+        text-align: right;
+    }
+
+    .gallery-track img {
+        width: 90vw;
+        height: auto;
+        margin-right: 8px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .gallery-container {
+        margin: 0.6rem;
+    }
+
+    .gallery-image {
+        width: 20rem;
+        height: 11rem;
+    }
+
+    .gallery-control {
+        background-color: rgba(0, 64, 128, 0.5); /* polopriehľadné */
+        color: #fff;
+        box-shadow: none;
+        backdrop-filter: blur(4px); /* jemné rozostrenie pozadia, ak podporované */
+    }
+
+    .gallery-control:hover {
+        background-color: rgba(0, 64, 128, 0.8); /* trošku výraznejšie pri hoveri */
+    }
+
+    .gallery-control-left {
+        left: 10px;
+    }
+
+    .gallery-control-right {
+        right: 10px;
+    }
+    
+    footer {
+        text-align: center;
+        max-width: 95% !important;
+        padding: 15px;
+    }
+
+    .topbar-notification {
+        position: absolute;
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        text-align: center;
+        box-sizing: border-box;
+    }
+}

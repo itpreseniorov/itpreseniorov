@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Prepojenie favicon -->
+    <link rel="icon" type="image/png" href="/images/favicon-it.png">
+
+    <!-- Prepojenie .css súboru -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Prepojenie .js súboru -->
+    <script src="script.js"></script>
+
+    <meta name="description" content="Pomáham s technikou všetkým, ktorí si nevedia rady – od výučby a nastavenia zariadení až po poradenstvo, pomoc na diaľku či zrýchlenie počítača. Jednoducho, individuálne a na mieru.">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+   
+    <title>ITpreseniorov.sk - výučba a pomoc s technikou. | ITpreseniorov.sk</title>
+
+    <!-- Spresnenie názvu webstránky -->
+    <script type="application/ld+json">
+        {
+          "https://schema.org",
+          "@type": "WebSite",
+          "name": "IT pre seniorov",
+          "url": "https://www.itpreseniorov.sk"
+        }
+    </script>
+</head>
+
+<body>  
+
+<div class="topbar-notification">
+    💡 Pomáham s technikou – seniorom aj mladším.
+</div>
+
+<header>
+
+    <!-- Nadpis stránky -->
+        IT pre seniorov
+
+    <!-- Podnadpis stránky -->
+    <p>
+        Jednoducho, individuálne a na mieru
+    </p>
+</header>    
+    
+<!-- Navigácia -->
+<div id="navigacia" class="nav">
+    <a href="#ponuka" class="active"><i class="fa-solid fa-list"></i>Ponuka</a>
+    <a href="#vyucba" class="active"><i class="fa-solid fa-chalkboard-teacher"></i>Výučba</a>
+    <a href="#cennik" class="active"><i class="fa-solid fa-euro-sign"></i>Cenník</a>
+    <a href="#platba" class="active"><i class="fa-solid fa-credit-card"></i>Platba</a>
+    <a href="#kontakt" class="active"><i class="fa-solid fa-envelope"></i>Kontakt</a>
+    <a href="#o-mne" class="active"><i class="fa-solid fa-user"></i>O mne</a>
+</div>
+
+<!-- Galéria kontajner -->
+<div id="gallery" class="gallery-container">
+    <div class="gallery" id="gallery-slider">
+      <div class="gallery-track" id="gallery-track">
+        <!-- Obrázky -->
+        <img src="/images/jt-2025.webp" loading="lazy" alt="obrazok-1">
+        <img src="/images/vk-2025.webp" loading="lazy" alt="obrazok-2">
+        <img src="/images/jt-2025.webp" loading="lazy" alt="obrazok-3">
+        <img src="/images/vk-2025.webp" loading="lazy" alt="obrazok-2">
+      </div>
+    </div>
+
+    <!-- Šípky -->
+    <div class="gallery-control gallery-control-left" onclick="scrollManual(-1)">&#10094;</div>
+    <div class="gallery-control gallery-control-right" onclick="scrollManual(1)">&#10095;</div>
+  </div>
+
+<!-- Ponuka -->
+<div id="ponuka" class="card">
+    <h2>Ponuka</h2>
+    <ul class="ponuka-list">
+        <!-- technicke poradenstvo -->
+        <li>
+            <div class="ponuka-content">
+                    <span>📞 Technické poradenstvo</span>
+                    <button onclick="toggleInfo(this)">Viac</button>
+            </div>
+            <p class="ponuka-extra-info">
+                <strong>Poradím s výberom</strong> mobilu, tabletu, notebooku, počítača, televízora, mobilného operátora a poskytovateľa internetu. 
+            </p>
+        </li>
+        <!-- instalacia -->
+        <li>
+            <div class="ponuka-content">
+                <span>⚙️ Inštalácia a nastavenie</span>
+                <button onclick="toggleInfo(this)">Viac</button>
+            </div>
+            <p class="ponuka-extra-info">
+                <strong>Nainštalujem a nastavím</strong> zariadenie na mieru k okamžitému použitiu, aby ste už nič nemuseli riešiť.
+            </p>
+        </li>
+        <!-- zrychlenie zariadenia -->
+        <li>
+            <div class="ponuka-content">
+                <span>🚀 Zrýchlenie zariadenia</span>
+                <button onclick="toggleInfo(this)">Viac</button>
+            </div>
+            <p class="ponuka-extra-info">
+                <strong>Zrýchlim</strong> vaše zariadenie preinštalovaním systému Windows za ChromeOS Flex, ktorý je určený na bežnú prácu s internetom, pozeranie videí a sociálne siete. <br><br> <strong>Systém je vhodný aj pre úplných začiatočníkov</strong>.
+            </p>
+        </li>
+        <!-- osobna vyucba -->
+        <li>
+            <div class="ponuka-content">
+                <span>🤝 Osobná výučba v Bratislave</span>
+                <button onclick="toggleInfo(this)">Viac</button>
+            </div>
+            <p class="ponuka-extra-info">
+                <strong>Prvých 15 minút úvodnej hodiny zdarma</strong> na zoznámenie sa. <br> Možnosť výučby aj u vás doma - bez doplatku.
+            </p>
+        </li>
+        <!-- online vyucba -->
+        <li>
+            <div class="ponuka-content">
+                <span>🌍 Online výučba pre zručnejších používateľov</span>
+                <button onclick="toggleInfo(this)">Viac</button>
+            </div>
+            <p class="ponuka-extra-info">
+                <strong>Prvých 15 minút úvodnej hodiny zdarma</strong> na zoznámenie sa. <br><br>
+                <strong>Je potrebné mať vopred zriadený</strong> Gmail a nainštalovaný Chrome Remote Desktop - návod nájdete v časti 👉 <a href="#navod" style="color: #004080 !important; text-decoration: underline;"><strong>Inštalácia</strong></a></strong>.
+            </p>
+        </li>
+        <!-- pomoc na dialku -->
+        <li>
+            <div class="ponuka-content">
+                <span>🧑‍💻 Pomoc na diaľku</span>
+                <button onclick="toggleInfo(this)">Viac</button>
+            </div>
+            <p class="ponuka-extra-info">
+                <strong>Ponúkam</strong> rýchlu pomoc na diaľku cez Chrome Remote Desktop vygenerovaním kódu na jednorázové pripojenie sa. <br><br>
+                <strong>Je potrebné mať vopred</strong> zriadený Gmail a nainštalovaný Chrome Remote Desktop vo svojom počítači alebo notebooku - návod nájdete v časti 👉 <a href="#navod" style="color: #004080 !important; text-decoration: underline;"><strong>Inštalácia</strong></a></strong>.
+            </p>
+        </li>
+</div>
+
+<!-- Výučba -->
+<div id="vyucba" class="card">
+    <h2>Výučba</h2>
+    <ul>
+        <li><strong>➡️ Jednoducho</strong> – bez technických pojmov.</li>
+        <li><strong>➡️ Individuálne</strong> – venujem sa iba vám.</li>
+        <li><strong>➡️ Na mieru</strong> – hodiny prispôsobené vašim požiadavkám.</li>
+    </ul>
+</div>
+
+<!-- (Windows) Návod na inštaláciu Chrome Remote Desktop -->
+<div id="navod" class="card">
+    <div class="ponuka-list">
+        <h2>💻 Inštalácia Chrome Remote Desktop</h2> <br>
+        <button class="button-navod" onclick="toggleInfo(this)">Zobraziť návod</button>
+    </div>
+    <div class="vyucba-extra-info" style="display: none; margin-top: 10px;">
+        <ol class="poznamka-navod">
+            <li>
+                <strong>👤 Prihláste sa do svojho Google účtu</strong>
+                👉 <a href="https://accounts.google.com/" target="_blank" style="color: #004080; text-decoration: underline;">
+                    <strong>Gmail účet</strong>
+                </a>. <br> Kliknite na odkaz.
+                 <br><br>
+                <strong>🔐 Ak Google účet nemáte</strong> 👉 <a href="https://accounts.google.com/signup" target="_blank" style="color: #004080; text-decoration: underline;">
+                    <strong>Zaregistrujte sa zdarma</strong>
+                </a>. <br> Kliknite na odkaz a postupujte podľa pokynov. Po registrácií sa prihláste do svojho Google účtu (Gmail).  <br> <br>
+                <span><strong style="color: #004080;">TIP:</strong></span><br>
+                💡 Zavináč <strong>"@"</strong> napíšete kombináciou kláves <strong>"Alt Gr + V"</strong>. <br> <strong>"Alt Gr"</strong> pridržte a stlačte <strong>"V"</strong>. <br>
+            </li>
+
+            <li>
+                <strong>🌐 Otvorte si stránku</strong>
+                👉 <a href="https://remotedesktop.google.com/support" target="_blank" style="color: #004080; text-decoration: underline;">
+                    <strong>Chrome Remote Desktop</strong>
+                </a>. <br> Kliknite na odkaz.
+            </li>
+
+            <li>
+                💻 <strong> Kliknite na tlačidlo "X" a potom na tlačidlo so šípkou</strong> podľa obrázkov nižšie: <br>
+                <img src="/images/nainstalovat-aplikaciu.jpeg" loading="lazy" alt="nainstalovat-aplikaciu" style="max-width: 100%; margin-top: 10px; border: 1px solid black;">
+                <img src="/images/manualne-stiahnutie.jpeg" loading="lazy" alt="manualne-stiahnutie" style="max-width: 100%; margin-top: 10px; border: 1px solid black;">
+            </li>
+
+            <li>
+                <strong>🧩 Nainštalujte rozšírenie do Chromu</strong><br>
+                Otvorí sa Chrome Web Store s doplnkom <strong>Chrome Remote Desktop.</strong> Kliknite na <strong style="color: #004080;">„Pridať do Chromu“</strong> a následne → <strong style="color: #004080;">„Pridať rozšírenie“</strong>. Teraz chvíľu počkajte, kým sa vám stiahne program a prejdite na nasledujúci krok.
+                <img src="/images/pridat-do-chromu.jpeg" loading="lazy" alt="pridat-do-chromu" style="max-width: 100%; margin-top: 10px; border: 1px solid black;">
+                <img src="/images/pridat-rozsirenie.jpeg" loading="lazy" alt="pridat-rozsirenie" style="max-width: 100%; margin-top: 10px; border: 1px solid black;">
+            </li>
+
+            <li>
+                <strong>✅ Prijať a inštalovať</strong> <br>
+                Keď sa vám program úspešne stiahol, mali by ste vidieť tlačidlo <strong style="color: #004080;"> "Prijať a inštalovať"</strong>. <br><br> Ak by nastala situácia, že po odkliknutí tlačidla <strong>"Prijať a inštalovať"</strong> uvidíte <strong>"OK"</strong>, tak to zakliknite a postupujte ďalej podľa návodu.
+                <img src="/images/crd-instalacia-2.png" loading="lazy" alt="crd-instalacia-2" style="max-width: 100%; margin-top: 10px; border: 1px solid black;">
+            </li>
+
+            <li>
+                <strong>📁 Vyberte súbor na inštaláciu</strong> <br>
+                Otvorte súbor vyznačený na obrázku s názvom <strong>"chromeremotedesktop.msi"</strong> a chvíľu počkajte. Po krátkej chvíli by ste už mali vidieť možnosť vygenerovať kód - postup na vygenerovanie kódu nájdete v nasledujúcom bode.
+                <img src="/images/stiahnute-subory.jpeg" loading="lazy" alt="stiahnute-subory" style="max-width: 100%; margin-top: 10px; border: 1px solid black;">
+                <img src="/images/proces-instalacie.jpeg" loading="lazy" alt="proces-instalacie" style="max-width: 100%; margin-top: 10px; border: 1px solid black;">
+                
+            </li>
+
+            <li>
+                <strong>🔢 Vygenerujte kód</strong> <br>
+                Postupujte podľa obrázku nižšie pre vygenerovanie kódu:
+                <img src="/images/uspesna-instalacia.jpeg" loading="lazy" alt="uspesna-instalacia" style="max-width: 100%; margin-top: 10px; border: 1px solid black;">    
+                Teraz už viete vygenerovať 12-miestny kód. Ak sa rozhodnete využiť moje služby <strong>"Online výučba"</strong> alebo <strong>"Pomoc na diaľku"</strong>, tak mi takto jednoducho vygenerujete a poskytnete tento kód, aby som sa na vás mohol pripojiť a pomôcť vám. <strong>Tento kód je dočasný</strong> - po vypnutí zdieľania prestane fungovať.           
+            </li>
+
+            <li>
+                Ak by ste si aj napriek návodu nevedeli rady, môžete využiť službu <br>
+                👉<a href="#cennik" target="_blank"><strong style="color: #004080; text-decoration: underline;">⚙️ Inštalácia a nastavenie</strong>
+                </a>.
+            </li>
+        </ol>                
+    </div>
+</div>
+
+<!-- Cenník -->
+<div id="cennik" class="card">
+    <h2>Cenník</h2>
+    <ul class="cennik-list">
+        <!-- technicke poradenstvo -->
+        <li>
+            <div class="cennik-content">
+                <div class="cennik-left">
+                    <span>📞 Technické poradenstvo</span>
+                </div>
+                    <div class="cennik-right">
+                    <span class="cennik-cena">15 € / 30 min.</span>
+                </div>
+            </div>
+        </li>
+        <!-- instalacia -->
+        <li>
+            <div class="cennik-content">
+                <div class="cennik-left">
+                    <span>⚙️ Inštalácia a nastavenie</span>
+                </div>
+                    <div class="cennik-right">
+                    <span class="cennik-cena">30 € / hod.</span>
+                </div>
+            </div>
+        </li>
+        <!-- zrychlenie zariadenia -->
+        <li>
+            <div class="cennik-content">
+                <div class="cennik-left">
+                    <span>🚀 Zrýchlenie zariadenia</span>
+                </div>
+                    <div class="cennik-right">
+                    <span class="cennik-cena"> 100 €</span>
+                </div>
+            </div>
+        </li>
+        <!-- osobna vyucba -->
+        <li>
+            <div class="cennik-content">
+                <div class="cennik-left">
+                    <span>🤝 Osobná výučba v Bratislave</span>
+                </div>
+                <div class="cennik-right">
+                    <span class="cennik-cena">40 € / hod.</span>
+                </div>
+            </div>
+        </li>
+        <!-- online vyucba -->
+        <li>
+            <div class="cennik-content">
+                <div class="cennik-left">
+                    <span>🌍 Online výučba pre zručnejších používateľov</span>
+                </div>
+                <div class="cennik-right">
+                    <span class="cennik-cena">30 € / hod.</span>
+                </div>
+            </div>
+        </li>
+        <!-- pomoc na dialku -->
+        <li>
+            <div class="cennik-content">
+                <div class="cennik-left">
+                    <span>🧑‍💻 Pomoc na diaľku</span>
+                </div>
+                <div class="cennik-right">
+                    <span class="cennik-cena">15 € / 30 min.</span>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+  <!-- Platba -->
+<div id="platba" class="card">
+
+  <h2>Platba</h2>
+  <br>
+  <span>
+    1️⃣ Pred realizáciou služby vám zašlem zálohovú faktúru, ktorú je potrebné uhradiť vopred. <br><br>
+    2️⃣ Po dokončení služby obdržíte riadnu faktúru (daňový doklad). <br><br>
+    3️⃣ 💶 <strong>Platba v hotovosti</strong> je možná len po predchádzajúcej dohode – aj v tomto prípade je potrebná platba vopred.
+  </span>   
+</div>
+
+<!-- Kontakt -->
+<div id="kontakt" class="card">
+
+    <h2>Kontakt</h2> 
+  <br>
+  <!-- WhatsApp tlačidlo -->
+        <a href="https://wa.me/421949664519" target="_blank" class="whatsapp-button">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" loading="lazy" alt="WhatsApp" class="whatsapp-icon">+421 949 664 519
+        </a>
+  
+  <!-- E-mail tlačidlo -->
+        <a href="mailto:info@itpreseniorov.sk?subject=Mám%20záujem%20o%20Vaše%20služby&body=Meno%20a%20priezvisko:%0D%0ATelefónne%20číslo:%0D%0AAdresa:%0D%0Apoznamka%20požiadavky:%0D%0A" class="email-button"> 
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" loading="lazy" alt="E-mail" class="email-icon">info@itpreseniorov.sk
+        </a>
+        
+    <br><br>
+
+    <span>Milí zákazníci,<br><br>
+        rád vám pomôžem s vašimi požiadavkami. Keďže podnikám popri zamestnaní, prosím vás o telefonický kontakt len počas tejto pracovnej doby:
+        <strong>pondelok – piatok od 17:00 do 20:00.</strong> <br><br>
+        Napísať mi však môžete kedykoľvek. Odpoviem vám hneď, ako to bude možné. <br><br>
+        Ďakujem za pochopenie!
+    </span>        
+  </div>
+
+  <!-- O mne -->
+<div id="o-mne" class="card">
+    <h2>O mne</h2>
+
+    <p>
+        <strong>V zamestnaní</strong> pôsobím ako vedúci IT oddelenia na vysokej škole, kde sa starám o výučbový portál Moodle, pomáham študentom aj kolegom s technickými otázkami a vediem interné školenia.
+    </p>
+
+    <p>
+        <strong>Vo voľnom čase</strong> sa venujem individuálnemu doučovaniu seniorov a menej technicky zdatných ľudí. Baví ma ukazovať, že moderné technológie nemusia byť strašiakom – ak sa vysvetlia jednoducho a trpezlivo.
+    </p>
+        
+    <p>
+        Nájdete ma v
+        👉<a href="https://www.vsemba.sk/ONas/OrganizacnaStruktura/Rektorat" target="_blank" style="color: #004080; text-decoration: underline;">
+        <strong>organizačnej štruktúre VŠ</strong>.
+        </a>
+    </p>
+</div>
+
+<!-- Footer -->
+<footer>
+    &copy; 2025 ITpreseniorov.sk | Vytvorené s láskou ❤️
+</footer>  
+</body>
+</html>
