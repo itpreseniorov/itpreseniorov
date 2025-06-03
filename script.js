@@ -1,9 +1,9 @@
 // VIAC
 function toggleInfo(button) {
-    const parent = button.closest("li, #navod, #platba");
+    const parent = button.closest("li, #navod");
     if (!parent) return;
   
-    let info = parent.querySelector(".vyucba-extra-info, .cennik-extra-info, .ponuka-extra-info");
+    let info = parent.querySelector(".navod-extra-info, .ponuka-extra-info");
   
     if (info) {
       const isVisible = window.getComputedStyle(info).display !== "none";
@@ -16,11 +16,7 @@ function toggleInfo(button) {
       } else {
         button.textContent = isVisible ? "Viac" : "Menej";
       }
-
-      if (button.classList.contains("button-platba")) {
-        button.textContent = isVisible ? "Viac" : "Menej";
-    } }
-}
+    }};
 
 // GALÉRIA
 document.addEventListener("DOMContentLoaded", function () {

@@ -1,0 +1,21 @@
+<!-- Galéria kontajner -->
+<div id="gallery" class="gallery-container">
+    <div class="gallery" id="gallery-slider">
+      <div class="gallery-track" id="gallery-track">
+        <!-- Obrázky -->
+        <img src="\Users\vladimir.talian\Dropbox\webstranka\galeria\jt-2025.jpeg" alt="jt-2025">
+        <img src="\Users\vladimir.talian\Dropbox\webstranka\galeria\jt-2025.jpeg" alt="jt-2025">
+        <img src="\Users\vladimir.talian\Dropbox\webstranka\galeria\jt-2025.jpeg" alt="jt-2025">
+        <img src="\Users\vladimir.talian\Dropbox\webstranka\galeria\jt-2025.jpeg" alt="jt-2025">
+        <img src="\Users\vladimir.talian\Dropbox\webstranka\galeria\jt-2025.jpeg" alt="jt-2025">
+        <img src="\Users\vladimir.talian\Dropbox\webstranka\galeria\jt-2025.jpeg" alt="jt-2025">
+        <img src="\Users\vladimir.talian\Dropbox\webstranka\galeria\jt-2025.jpeg" alt="jt-2025">
+        <img src="\Users\vladimir.talian\Dropbox\webstranka\galeria\jt-2025.jpeg" alt="jt-2025">
+        <img src="\Users\vladimir.talian\Dropbox\webstranka\galeria\jt-2025.jpeg" alt="jt-2025">
+      </div>
+    </div>
+
+    <!-- Šípky -->
+    <div class="gallery-control gallery-control-left" onclick="scrollManual(-1)">&#10094;</div>
+    <div class="gallery-control gallery-control-right" onclick="scrollManual(1)">&#10095;</div>
+  </div>
