@@ -40,7 +40,7 @@ header {
     align-items: center;
     min-height: 100px;
     padding-top: 3rem;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     border-bottom: 4px solid #ecf0f2;
@@ -526,12 +526,20 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 40px; 
+    height: 100px; 
     padding: 9px;
     width: 100%;
     box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.3);
     border-top: 4px solid #ecf0f2;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.footer-inner {
+    font-size: 0.6rem;
+    color: #cecdcd;
+    max-width: 300px;
+    width: 100%;
+    text-align: left;
 }
 
 /* Zabezpečí presúvanie sa po stránke klávesnicou */
@@ -543,11 +551,10 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    /* Zmenšenie paddingu a zarovnanie pre menšie zariadenia */
     header {
         font-size: clamp(2rem, 6vw, 3rem);
         padding-top: 3.5rem;
-        padding-bottom: 0.5rem;
+        padding-bottom: 0.3rem;
     }
 
     header p {
@@ -555,8 +562,8 @@ footer {
     }
     
     .nav {
-        flex-direction: column; /* Zmení smer na stĺpec na menších zariadeniach */
-        align-items: center; /* Vycentruje odkazy v navigácii */
+        flex-direction: column; 
+        align-items: center;
     }
 
     .nav a {
@@ -601,14 +608,14 @@ footer {
     }
 
     .gallery-control {
-        background-color: rgba(0, 64, 128, 0.5); /* polopriehľadné */
+        background-color: rgba(0, 64, 128, 0.5);
         color: #fff;
         box-shadow: none;
-        backdrop-filter: blur(4px); /* jemné rozostrenie pozadia, ak podporované */
+        backdrop-filter: blur(4px);
     }
 
     .gallery-control:hover {
-        background-color: rgba(0, 64, 128, 0.8); /* trošku výraznejšie pri hoveri */
+        background-color: rgba(0, 64, 128, 0.8);
     }
 
     .gallery-control-left {
@@ -624,6 +631,7 @@ footer {
         max-width: 95% !important;
         padding: 15px;
     }
+}
 
     .topbar-notification {
         position: absolute;
@@ -633,4 +641,3 @@ footer {
         text-align: center;
         box-sizing: border-box;
     }
-}
