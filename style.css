@@ -195,8 +195,8 @@ body, p, li, span, a, input, textarea, h3, u {
 }
 
 .gallery-track img {
-    width: 20rem;
-    height: 13rem;
+    width: 19.5rem;
+    height: 14rem;
     border-radius: 8px;
     margin-right: 10px;
     margin-left: 10px;
@@ -204,6 +204,7 @@ body, p, li, span, a, input, textarea, h3, u {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     user-select: none;
     pointer-events: none;
+    padding: 3px;
 }
 
 .gallery-container {
@@ -520,7 +521,7 @@ footer {
     text-align: center; 
     background: #004080;
     color: #f1f1f1; 
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     position: relative;    
     display: flex; 
     flex-direction: column;
@@ -536,10 +537,7 @@ footer {
 
 .footer-inner {
     font-size: 0.6rem;
-    color: #cecdcd;
-    max-width: 300px;
-    width: 100%;
-    text-align: left;
+    color: #f3f6f9;
 }
 
 /* Zabezpečí presúvanie sa po stránke klávesnicou */
@@ -591,27 +589,21 @@ footer {
     }
 
     .gallery-track img {
-        width: 90vw;
-        height: auto;
-        margin-right: 8px;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+        width: 20rem;
+        height: 15rem;
+        margin-right: 20px;
+        padding: 3px;
     }
 
     .gallery-container {
         margin: 0.6rem;
     }
 
-    .gallery-image {
-        width: 20rem;
-        height: 11rem;
-    }
-
     .gallery-control {
         background-color: rgba(0, 64, 128, 0.5);
         color: #fff;
         box-shadow: none;
-        backdrop-filter: blur(4px);
+        backdrop-filter: blur(3px);
     }
 
     .gallery-control:hover {
@@ -630,7 +622,15 @@ footer {
         text-align: center;
         max-width: 95% !important;
         padding: 15px;
+        height: 100px;
+        font-size: 0.9rem;
     }
+
+    .footer-inner {
+    font-size: 0.6rem;
+    color: #f3f6f9;
+    margin-bottom: 0.2rem;
+}
 }
 
     .topbar-notification {

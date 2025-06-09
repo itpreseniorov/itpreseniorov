@@ -24,11 +24,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const images = track.children;
   const gallery = document.getElementById('gallery-slider');
 
-  // Zdvojenie pre plynulý loop
+ // Zdvojenie pre plynulý loop
   const total = images.length;
-  for (let i = 0; i < total; i++) {
-      const clone = images[i].cloneNode(true);
-      track.appendChild(clone);
+  if (total > 4) {
+      for (let i = 0; i < total; i++) {
+          const clone = images[i].cloneNode(true);
+          track.appendChild(clone);
+      }
   }
 
   // Manuálne posúvanie
