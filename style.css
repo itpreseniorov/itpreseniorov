@@ -467,19 +467,6 @@ button:hover,
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* IKONY */
-.whatsapp-icon {
-    width: 36px;
-    height: 36px;
-    margin-right: 10px;
-}
-
-.email-icon {
-    width: 36px;
-    height: 36px;
-    margin-right: 10px;
-}
-
 /* KONTAKT */
 .kontakt-container {
     display: flex;
