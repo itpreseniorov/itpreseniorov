@@ -32,7 +32,6 @@ header {
     font-family: 'Poppins';
     background: #004080;
     color: #f1f1f1;
-    font-size: clamp(1.6rem, 5vw, 3rem);
     font-weight: normal;
     position: relative;
     display: flex;
@@ -46,13 +45,22 @@ header {
     border-bottom: 4px solid #ecf0f2;
 }
 
+header h1 {
+    font-family: 'Poppins';
+    font-weight: normal;
+    font-size: clamp(1.6rem, 5vw, 3rem);
+    margin: 0;
+    color: #f1f1f1;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
 header p {
     font-family: 'Noto Sans';
     margin: 0;
     font-size: clamp(1rem, 3vw, 1.5rem);
     font-style: italic;
     color: #d9e6f2;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Tieň pre lepšiu čitateľnosť */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 /* NAVIGÁCIA */
@@ -108,7 +116,7 @@ body {
 }
 
 /* Nadpisy: Poppins */
-header, h2, h3, {
+header, h1, h2, h3, {
     font-family: 'Poppins', sans-serif;
 }
   
@@ -542,8 +550,22 @@ footer {
         padding-bottom: 0.3rem;
     }
 
+    header h1 {
+        font-family: 'Poppins';
+        font-weight: normal;
+        font-size: clamp(2rem, 6vw, 3rem);
+        margin: 0;
+        color: #f1f1f1;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
     header p {
+        font-family: 'Noto Sans';
+        margin: 0;
         font-size: 1.1rem;
+        font-style: italic;
+        color: #d9e6f2;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
     }
     
     .nav {
