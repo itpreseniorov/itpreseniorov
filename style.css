@@ -108,12 +108,12 @@ body {
 }
 
 /* Nadpisy: Poppins */
-header, h1, h2, h4, h5, h6 {
+header, h3, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
 }
   
 /* Telo textu: Noto Sans */
-body, p, li, span, a, input, textarea, h2, u {
+body, p, li, span, a, input, textarea, h3, u {
     font-family: 'Noto Sans', sans-serif;
     font-size: clamp(1.2rem, 4vw, 1.5rem);
 }
@@ -268,13 +268,13 @@ body, p, li, span, a, input, textarea, h2, u {
     margin: 1.5rem auto;
 }
 
-.card h1 { 
+.card h3 { 
     color: #004080; 
     font-size: clamp(1rem, 4vw, 2rem);
     margin-bottom: 1px; 
 }
 
-.card h2 { 
+.card h3 { 
     color: #272323; 
     font-size: clamp(1.1rem, 4vw, 1.5rem);
     margin-bottom: 10px; 
@@ -560,7 +560,7 @@ footer {
         font-weight: bold;
     }
 
-    .card h1 {
+    .card h3 {
         font-size: clamp(1.5rem, 6vw, 2rem);
     }
 
