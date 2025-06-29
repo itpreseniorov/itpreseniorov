@@ -3,12 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IT pre seniorov – výučba, pomoc a poradenstvo</title>
+    <meta name="description" content="Kurzy a pomoc s počítačom, mobilom či tabletom pre seniorov – online po celom Slovensku a osobne v Bratislave.">
     
-    <!-- Pridanie kanonickej url -->
+    <!-- Kanonicka URL -->
     <link rel="canonical" href="https://www.itpreseniorov.sk">
     
-    <!-- Prepojenie favicon -->
+    <!-- Favicon -->
     <link rel="icon" type="image/webp" href="/images/itpreseniorov-favicon.webp">
+
+    <!-- Preload Font Awesome -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </noscript>
+
+    <!-- Preload hlavneho obrazku LCP optimalizacia -->
+    <link rel="preload" as="image" href="/images/jt.webp">
 
     <!-- Prepojenie .css súboru -->
     <link rel="stylesheet" href="style.css">
@@ -16,27 +28,36 @@
     <!-- Prepojenie .js súboru -->
     <script src="script.js"></script>
 
-    <meta name="description" content="Výučba počítača, notebooku, mobilov a tabletov pre seniorov – osobne v Bratislave a online cez vzdialené pripojenie. Pomoc, nastavenie a poradenstvo.">
-    
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    </noscript>
-
-    <!-- Zlepsenie LCP -->
-    <link rel="preload" as="image" href="/images/jt.webp">
-    
-    <title>IT pre seniorov – výučba, pomoc a poradenstvo | Bratislava a online</title>
-
-    <!-- Spresnenie názvu webstránky -->
+    <!-- Strukturovane data -->
     <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "WebSite",
-          "name": "IT pre seniorov",
-          "url": "https://www.itpreseniorov.sk"
-        }
-    </script>
+          {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "WebSite",
+                "url": "https://www.itpreseniorov.sk",
+                "name": "IT pre seniorov",
+                "inLanguage": "sk",
+                "potentialAction": {
+                  "@type": "SearchAction",
+                  "target": "https://www.itpreseniorov.sk/?s={search_term_string}",
+                  "query-input": "required name=search_term_string"
+                }
+              },
+              {
+                "@type": "Organization",
+                "name": "IT pre seniorov",
+                "url": "https://www.itpreseniorov.sk",
+                "inLanguage": "sk",
+                "description": "Kurzy, pomoc a poradenstvo v oblasti IT pre seniorov – osobne aj online.",
+                "logo": "https://www.itpreseniorov.sk/logo.png",
+                "sameAs": [
+                  "https://www.facebook.com/profile.php?id=61577210644230"
+                ]
+              }
+            ]
+          }
+  </script>
 </head>
 
 <body>  
