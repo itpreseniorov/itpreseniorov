@@ -420,7 +420,7 @@ button:hover,
     display: inline-flex;
     align-items: center;
     padding: 10px 15px;
-    background-color: #25D366;
+    background-color: #1ebe57;
     color: #f1f1f1;
     text-decoration: none;
     border-radius: 30px;
@@ -431,14 +431,14 @@ button:hover,
 }
 
 .whatsapp-button:hover {
-    background-color: #1ebe57;
+    background-color: #25D366;
 }
 
 .email-button {
     display: inline-flex;
     align-items: center;
     padding: 10px 15px;
-    background-color: #0073e6;
+    background-color: #eabb1e;
     color: #f1f1f1;
     text-decoration: none;
     border-radius: 30px;
@@ -449,7 +449,26 @@ button:hover,
 }
 
 .email-button:hover {
+    background-color: #facb0e;
+}
+
+.fb-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
     background-color: #005bb5;
+    color: #f1f1f1;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: clamp(1rem, 4vw, 1.8rem);
+    font-weight: normal;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.fb-button:hover {
+    background-color: #0866ff;
+    color: #f1f1f1;
 }
 
 .kontakt-button {
