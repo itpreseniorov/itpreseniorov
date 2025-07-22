@@ -424,7 +424,7 @@ button:hover,
     color: #f1f1f1;
     text-decoration: none;
     border-radius: 30px;
-    font-size: clamp(1.1rem, 4vw, 1.5rem);
+    font-size: clamp(1rem, 4vw, 1.5rem);
     font-weight: normal;
     transition: background-color 0.3s;
     margin-bottom: 5px;
